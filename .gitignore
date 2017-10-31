@@ -1,10 +1,11 @@
 # Data Files
 
 # json files
-static/json
+static/json/baseball/
 
 # videos
-static/video
+static/video/*.avi
+static/video/*.gif
 
 
 
