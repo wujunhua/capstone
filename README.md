@@ -36,7 +36,6 @@ Setup and activate
 $ virtualenv 'foldername'
 $ cd 'foldername'
 
-
 $ source bin/activate
 
 In Windows
