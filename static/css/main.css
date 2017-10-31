@@ -1,0 +1,10 @@
+#gif{
+    text-align:center;
+    margin:50px auto;
+}
+
+.gifContainer{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}

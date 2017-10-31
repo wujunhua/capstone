@@ -1,0 +1,13 @@
+# Data Files
+
+# json files
+static/json/baseball/
+
+# videos
+static/video/*.avi
+static/video/*.gif
+
+
+
+# Heroku App
+capstone/
