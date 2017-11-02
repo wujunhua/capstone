@@ -1,16 +1,20 @@
 from flask import Flask, render_template
+from app import app
 import pandas as pd
 import numpy as np
 import glob
 import json
 
 
-app = Flask(__name__, static_url_path='/static')
-
-
 @app.route('/')
 def index():
-    folder = "static/json/baseball/*.json"
+    """ Homepage """
+    return render_template('index.html')
+
+
+@app.route('/baseball.html')
+def baseball():
+    folder = "app/static/json/sport/baseball/baseball1/*.json"
     files = glob.glob(folder)
 
     Nose        = []
@@ -211,8 +215,4 @@ def index():
                                     'rear',
                                     'lear'])
 
-    return render_template('/index.html', Confidence = Confidence.to_html(), avgConf = avgConf.to_html())
-
-
-if __name__ == "__main__":
-    app.run()
+    return render_template('baseball.html', Confidence = Confidence.to_html(), avgConf = avgConf.to_html())
