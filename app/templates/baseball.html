@@ -1,13 +1,9 @@
-<!DOCTYPE html>
+{% extends "base.html" %}
 
-<html lang="en">
-<head>
-    <title>Baseball</title>
-     <link rel="stylesheet" type="text/css" href="/app/static/css/main.css">
-</head>
+{% block content %}
 <body>
-    <center><p>Capstone Project: openpose</p></center>
     <div id="gif">
+        <p>Capstone Project: openpose</p>
         <div class="gifContainer">
             <div class="caption">Original</div>
             <img src="/app/static/video/sport/baseball/baseball1.gif" height="180px" width="320px"/>
@@ -28,4 +24,4 @@
         </center>
     </div>
 </body>
-</html>
+{% endblock %}

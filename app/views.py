@@ -8,6 +8,7 @@ import json
 
 @app.route('/')
 def index():
+    """ Homepage """
     return render_template('index.html')
 
 
