@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Baseball</title>
+     <link rel="stylesheet" type="text/css" href="/app/static/css/main.css">
+</head>
+<body>
+    <center><p>Capstone Project: openpose</p></center>
+    <div id="gif">
+        <div class="gifContainer">
+            <div class="caption">Original</div>
+            <img src="/app/static/video/sport/baseball/baseball1.gif" height="180px" width="320px"/>
+        </div>
+
+        <div class="gifContainer">
+            <div class="caption">Result</div>
+            <img src="/app/static/video/sport/baseball/result_baseball1.gif" height="180px" width="320px"/>
+        </div>
+    </div>
+
+    <div id="data">
+        <center>
+            <div class="caption">Body Parts Confidence in Average</div>
+            <p>{{ avgConf | safe }}</p>
+            <div class="caption">Body Parts Confidence</div>
+            <p>{{ Confidence | safe }}</p>
+        </center>
+    </div>
+</body>
+</html>

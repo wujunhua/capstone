@@ -1,10 +1,15 @@
 # Data Files
 
 # json files
-static/json/
+app/static/json/
 
 # videos
-static/video/
+app/static/video/
+
+
+
+# Others
+__pycache__
 
 
 
