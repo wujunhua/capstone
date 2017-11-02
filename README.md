@@ -55,7 +55,7 @@ $ pip install -r requirements.txt
 
 Start server
 ```
-$ python app.py
+$ python run.py
 ```
 
 Access the localhost on your web browser
