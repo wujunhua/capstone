@@ -3,7 +3,7 @@
 {% block content %}
 <body>
     <div id="gif">
-        <p>Capstone Project: openpose</p>
+        <p>Samples</p>
         <div class="gifContainer">
             <div class="caption">Original</div>
             <img src="/app/static/video/sport/baseball/baseball1.gif" height="180px" width="320px"/>
@@ -15,12 +15,12 @@
         </div>
     </div>
 
-    <div id="data">
+    <div class="data">
         <center>
             <div class="caption">Body Parts Confidence in Average</div>
-            <p>{{ avgConf | safe }}</p>
+            {{ bavgConf | safe }}
             <div class="caption">Body Parts Confidence</div>
-            <p>{{ Confidence | safe }}</p>
+            {{ bConfidence | safe }}
         </center>
     </div>
 </body>

@@ -1,10 +1,10 @@
 # Data Files
 
 # json files
-app/static/json/
+#app/static/json/
 
 # videos
-app/static/video/
+#app/static/video/
 
 
 

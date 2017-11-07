@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+<body>
+    <div id="gif">
+        <p>Samples</p>
+        <div class="gifContainer">
+            <div class="caption">Original</div>
+            <img src="/app/static/video/sport/cycling/cycling1.gif" height="180px" width="320px"/>
+        </div>
+
+        <div class="gifContainer">
+            <div class="caption">Result</div>
+            <img src="/app/static/video/sport/cycling/result_cycling1.gif" height="180px" width="320px"/>
+        </div>
+    </div>
+
+    <div class="data">
+        <center>
+            <div class="caption">Body Parts Confidence in Average</div>
+            {{ cavgConf | safe }}
+            <div class="caption">Body Parts Confidence</div>
+            {{ cConfidence | safe }}
+        </center>
+    </div>
+</body>
+{% endblock %}
