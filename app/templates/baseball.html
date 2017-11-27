@@ -6,22 +6,66 @@
         <p>Samples</p>
         <div class="gifContainer">
             <div class="caption">Original</div>
-            <img src="/app/static/video/sport/baseball/baseball1.gif" height="180px" width="320px"/>
+            <img src="/app/static/video/sport/baseball/baseball.gif" height="180px" width="320px"/>
         </div>
 
         <div class="gifContainer">
             <div class="caption">Result</div>
-            <img src="/app/static/video/sport/baseball/result_baseball1.gif" height="180px" width="320px"/>
+            <img src="/app/static/video/sport/baseball/result_baseball.gif" height="180px" width="320px"/>
         </div>
     </div>
 
     <div class="data">
         <center>
-            <div class="caption">Body Parts Confidence in Average</div>
+        <button onclick="aconf()">Body Parts Confidence in Average</button>
+        <div id="aconf">
             {{ bavgConf | safe }}
-            <div class="caption">Body Parts Confidence</div>
+        </div>
+
+        <button onclick="conf()">Body Parts Confidence</button>
+        <div id="conf">
             {{ bConfidence | safe }}
+        </div>
+
+        <button onclick="occl()">Body Parts Occlusion</button>
+        <div id="occl">
+            <div style="float: left">
+                {{ mashCount | safe }}
+            </div>
+            <div style="float: left">
+                {{ mashLocation | safe }}
+            </div>
+        </div>
         </center>
     </div>
+
+    <script>
+    function aconf() {
+        var x = document.getElementById("aconf");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+
+    function conf() {
+        var x = document.getElementById("conf");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+
+    function occl() {
+        var x = document.getElementById("occl");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+    </script>
 </body>
 {% endblock %}

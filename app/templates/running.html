@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+
+{% block content %}
+<body>
+    <div id="gif">
+        <p>Samples</p>
+        <div class="gifContainer">
+            <div class="caption">Original</div>
+            <img src="/app/static/video/sport/running/running.gif" height="180px" width="320px"/>
+        </div>
+
+        <div class="gifContainer">
+            <div class="caption">Result</div>
+            <img src="/app/static/video/sport/running/result_running.gif" height="180px" width="320px"/>
+        </div>
+    </div>
+
+    <div class="data">
+        <center>
+        <button onclick="aconf()">Body Parts Confidence in Average</button>
+        <div id="aconf">
+            {{ ravgConf | safe }}
+        </div>
+
+        <button onclick="conf()">Body Parts Confidence</button>
+        <div id="conf">
+            {{ rConfidence | safe }}
+        </div>
+
+        <button onclick="occl()">Body Parts Occlusion</button>
+        <div id="occl">
+            <div style="float: left">
+                {{ mashCount | safe }}
+            </div>
+            <div style="float: left">
+                {{ mashLocation | safe }}
+            </div>
+        </div>
+        </center>
+    </div>
+
+    <script>
+    function aconf() {
+        var x = document.getElementById("aconf");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+
+    function conf() {
+        var x = document.getElementById("conf");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+
+    function occl() {
+        var x = document.getElementById("occl");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+    </script>
+</body>
+{% endblock %}

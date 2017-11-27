@@ -6,16 +6,47 @@
         <p>Samples</p>
         <div class="gifContainer">
             <div class="caption">Baseball</div>
-            <img src="/app/static/video/sport/baseball/result_baseball1.gif" height="180px" width="320px"/>
+            <img src="/app/static/video/sport/baseball/result_baseball.gif" height="180px" width="320px"/>
             <div class="caption">Baseball: Body Parts Confidence in Average</div>
             {{ bavgConf | safe }}
+
+            <p style="float: left">Total Occlusions: <strong>{{ bTotalCount }}</strong></p>
+        </div>
+
+        <div class="gifContainer">
+            <div class="caption">Basketball</div>
+            <img src="/app/static/video/sport/basketball/result_basketball.gif" height="180px" width="320px"/>
+            <div class="caption">Basketball: Body Parts Confidence in Average</div>
+            {{ bbavgConf | safe }}
+
+            <p style="float: left">Total Occlusions: <strong>{{ bbTotalCount }}</strong></p>
         </div>
 
         <div class="gifContainer">
             <div class="caption">Cycling</div>
-            <img src="/app/static/video/sport/cycling/result_cycling1.gif" height="180px" width="320px"/>
+            <img src="/app/static/video/sport/cycling/result_cycling.gif" height="180px" width="320px"/>
             <div class="caption">Cycling: Body Parts Confidence in Average</div>
             {{ cavgConf | safe }}
+
+            <p style="float: left">Total Occlusions: <strong>{{ cTotalCount }}</strong></p>
+        </div>
+
+        <div class="gifContainer">
+            <div class="caption">Running</div>
+            <img src="/app/static/video/sport/running/result_running.gif" height="180px" width="320px"/>
+            <div class="caption">Running: Body Parts Confidence in Average</div>
+            {{ ravgConf | safe }}
+
+            <p style="float: left">Total Occlusions: <strong>{{ rTotalCount }}</strong></p>
+        </div>
+
+        <div class="gifContainer">
+            <div class="caption">Table Tennis</div>
+            <img src="/app/static/video/sport/tabletennis/result_tabletennis.gif" height="180px" width="320px"/>
+            <div class="caption">Table Tennis: Body Parts Confidence in Average</div>
+            {{ tavgConf | safe }}
+
+            <p style="float: left">Total Occlusions: <strong>{{ tTotalCount }}</strong></p>
         </div>
     </div>
 
